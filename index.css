@@ -372,22 +372,22 @@ header .search-bar-container label:hover {
 /* Books style End */
 
 
-/* Packages style start */
+/* gallery style start */
 
-.packages .box-container{
+.gallery .box-container{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
 
-.packages .box-container .box{
+.gallery .box-container .box{
     flex:  1 1 30rem;
     position: relative;
     text-align: center;
     overflow: hidden;
 }
 
-.packages .box-container .box img{
+.gallery .box-container .box img{
   width: 100%;
   max-height: 30rem;
   object-fit: cover;
@@ -396,11 +396,11 @@ header .search-bar-container label:hover {
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-.packages .box-container .box:hover .content{
+.gallery .box-container .box:hover .content{
    top: 0;
 }
 
-.packages .box-container .box .content{
+.gallery .box-container .box .content{
     position: absolute;
     top: -120%;
    height: 100%;
@@ -413,16 +413,72 @@ header .search-bar-container label:hover {
    padding: 1.5rem;
 }
 
-.packages .box-container .box .content h3{
+.gallery .box-container .box .content h3{
     color: var(--orange);
     font-size: 3rem;
 }
 
-.packages .box-container .box .content p{
+.gallery .box-container .box .content p{
     font-size: 2rem;
     color: #fff;
 }
-/* Packages style End */
+/* gallery style End */
+
+
+/* Package style start */
+
+.packages .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.packages .box-container .box{
+    flex: 1 1 30rem;
+    border: .1rem solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+
+}
+
+.packages .box-container .box img{
+   width: 100%;
+}
+
+.packages .box-container .box .content{
+    padding: 1.5rem;
+}
+
+.packages .box-container .box .content h3{
+    font-size: 3rem;
+}
+
+.packages .box-container .box .content h3 i{
+    color: var(--orange);
+}
+
+.packages .box-container .box .content p{
+    font-size: 1.5rem;
+    color: #666;
+    margin: .5rem 0;
+}
+
+.packages .box-container .box .content .stars i{
+    font-size: 1.7rem;
+    color: var(--orange);
+    margin-left: .3rem;
+}
+
+.packages .box-container .box .content .price{
+    font-size: 1.7rem;
+    margin: .5rem 0;
+}
+
+.packages .box-container .box .content .price span{
+    font-size: 1.5rem;
+    text-decoration:line-through;
+}
+
+/* Package   style start */
 
 
 
