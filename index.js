@@ -33,7 +33,7 @@ loginBtn.addEventListener('click', () => {
 window.onscroll = () => {
     searchBtn.classList.remove('fa-times')
     searchBar.classList.remove('active');
-    searchBar.classList.remove('active-drop-down');
+    navbar.classList.remove('active-drop-down');
     menuBar.classList.remove('fa-times')
 }
 
