@@ -465,7 +465,7 @@ header .search-bar-container label:hover {
 .packages .box-container .box .content .stars i{
     font-size: 1.7rem;
     color: var(--orange);
-    margin-left: .3rem;
+    margin-right: .3rem;
 }
 
 .packages .box-container .box .content .price{
@@ -474,12 +474,49 @@ header .search-bar-container label:hover {
 }
 
 .packages .box-container .box .content .price span{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-decoration:line-through;
 }
 
 /* Package   style start */
 
+
+
+/* Services style start */
+
+.services .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.services .box-container .box{
+    flex: 1 1 30rem;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+.services .box-container .box:hover{
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.services .box-container .box i{
+    font-size: 4rem;
+    color: var(--orange);
+}
+
+.services .box-container .box h3{
+    font-size: 2.5rem;
+    margin: .5rem 0;
+}
+
+.services .box-container .box p{
+    font-size: 1.5rem;
+    color: #666;
+}
+
+
+/* Service section End */
 
 
 
