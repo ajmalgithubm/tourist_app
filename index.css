@@ -50,6 +50,23 @@ section{
     padding: 2rem 9%;
 }
 
+.heading{
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.heading span{
+    font-size: 3.5rem;
+    background: rgba(255, 165, 0, .2);
+    color: var(--orange);
+    border-radius: .5rem;
+    padding: .1rem .2rem ;
+}
+
+.heading span .space{
+    background: none;
+}
+
 
 
 /* Headre style start */
@@ -304,7 +321,55 @@ header .search-bar-container label:hover {
 /* Home style end */
 
 
+/*  Books style start */
 
+.books .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: #fff;
+}
+
+.books .row .image{
+    flex: 1 1 30rem;
+}
+.books .row .image img{
+   width: 100%;
+   object-fit: cover;
+}
+
+
+.books .row form{
+    flex: 1 1 50rem;
+}
+.books .row form{
+   padding: 2rem;
+   background: #f7f7f7;
+   border: .1rem solid rgba(0, 0, 0, 0.1);
+   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.books .row form .input-box h1{
+    font-size: 2rem;
+    color: #666;
+    margin: .2rem 0;
+} 
+
+.books .row form .input-box input{
+    padding: .8rem 3rem;
+    border: .1rem solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    margin: .5rem 0;
+    width: 100%;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+}
+
+.books .row form .input-box input:focus{
+    border-color: var(--orange);
+}
+/* Books style End */
 
 
 
@@ -383,5 +448,7 @@ header .search-bar-container label:hover {
     html{
         font-size: 50%;
     }
-    
+    .heading span{
+        font-size: 2.5rem;
+    }
 }
