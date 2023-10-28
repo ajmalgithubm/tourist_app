@@ -1,6 +1,8 @@
 const searchBtn = document.querySelector('#search-btn');
 const searchBar = document.querySelector('.search-bar-container');
 
+const videoBtn = document.querySelectorAll('.vid-btn')
+
 const menuBar = document.querySelector('#menu-bar')
 
 const loginBtn = document.querySelector('#login-user');
@@ -34,3 +36,13 @@ window.onscroll = () => {
     searchBar.classList.remove('active-drop-down');
     menuBar.classList.remove('fa-times')
 }
+
+videoBtn.forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelector('.controls .active').classList.remove('active');
+        btn.classList.add('active');
+        let src = btn.getAttribute('data-src');
+        document.querySelector('.video-slider').src = src
+
+    });
+});
