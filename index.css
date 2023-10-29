@@ -389,7 +389,7 @@ header .search-bar-container label:hover {
 
 .gallery .box-container .box img{
   width: 100%;
-  max-height: 30rem;
+  height: 100%;
   object-fit: cover;
   cursor: pointer;
   border: .1rem solid rgba(0, 0, 0, 0.1);
@@ -398,6 +398,7 @@ header .search-bar-container label:hover {
 
 .gallery .box-container .box:hover .content{
    top: 0;
+   padding: 1rem;
 }
 
 .gallery .box-container .box .content{
@@ -442,6 +443,8 @@ header .search-bar-container label:hover {
 
 .packages .box-container .box img{
    width: 100%;
+   height: 20rem;
+   object-fit: cover;
 }
 
 .packages .box-container .box .content{
@@ -655,7 +658,7 @@ header .search-bar-container label:hover {
 }
 
 .footer .footer-container .box-container h2{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #fff;
 }
 
